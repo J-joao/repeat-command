@@ -9,7 +9,7 @@
 
 int main(int argc, const char *argv[])
 {
-    char str[10000] = {'\0'};
+    char* str = malloc(strlen(argv[2]));
     FILE* fd = stdin;
 
     /* if connected to the terminal, take string from argv[2] */
