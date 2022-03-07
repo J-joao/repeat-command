@@ -15,7 +15,7 @@ int main(int argc, const char *argv[])
     /* if connected to the terminal, take string from argv[2] */
     if(isatty(fileno(fd))) 
     {
-        if (argc <= 1 || argc > 3) 
+        if (argc <= 1 || argc != 3) 
         {
             fprintf(stderr, BADUSAGE);
             exit(EXIT_FAILURE);
